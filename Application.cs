@@ -37,10 +37,14 @@ namespace LoRCollectionManager
             var set2 = File.ReadAllText(@"Resources\CardData\set2-en_us.json");
             var set3 = File.ReadAllText(@"Resources\CardData\set3-en_us.json");
 
-            cm.InitialiseCards(JArray.Parse(set1));
-            cm.InitialiseCards(JArray.Parse(set2));
-            cm.InitialiseCards(JArray.Parse(set3));
+            cm.AddToAllCards(JArray.Parse(set1));
+            cm.AddToAllCards(JArray.Parse(set2));
+            cm.AddToAllCards(JArray.Parse(set3));
 
+
+            cm.UpdateDesiredCollection("CEBQCAIFF4DQGCJDHBEUWWCZLYCQGBICAMCAKBQAAEAQGCJP");
+            cm.UpdateDesiredCollection("CEBQCAIFF4DQGCJDHBEUWWCZLYCQGBICAMCAKBQAAEAQGCJP");
+            var cards = cm.DesiredUserCollection.Select(c => cm.GetCardById(c.CardCode)).ToList();
         }
     }
 }
