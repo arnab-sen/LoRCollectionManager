@@ -54,9 +54,9 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Application.cs" />
-    <Compile Include="Card.cs" />
-    <Compile Include="CollectionManager.cs" />
+    <Compile Include="src\Application.cs" />
+    <Compile Include="src\Card.cs" />
+    <Compile Include="src\CollectionManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -89,5 +89,6 @@
       <Name>LoRDeckCodes</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
