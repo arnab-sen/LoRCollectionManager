@@ -77,5 +77,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="LoRDeckCodes\LoRDeckCodes\LoRDeckCodes.csproj">
+      <Project>{3304867d-532a-4f4f-8051-04b7b0a7d535}</Project>
+      <Name>LoRDeckCodes</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
